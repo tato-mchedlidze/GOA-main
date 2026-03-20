@@ -1,0 +1,39 @@
+Backend
+Backend is the part of an application that runs on the server.
+It handles logic, data, and communication with the database.
+
+Types of Backend:
+• Server-side backend – runs on a server (Node.js, Python, Java)
+• API backend – provides data to the frontend through APIs
+
+
+Protocol
+A protocol is a set of rules that computers use to communicate.
+
+Types of Protocols:
+• HTTP / HTTPS – used for web communication
+• FTP – used to transfer files
+• TCP/IP – base protocol of the internet
+
+
+Request
+A request is a message sent from the frontend to the server.
+
+
+Response
+A response is the answer sent from the server back to the frontend.
+
+
+Database
+A database is a place where data is stored.
+
+
+Types of Databases:
+• SQL – data stored in tables (MySQL, PostgreSQL)
+• NoSQL – flexible data storage (MongoDB)
+
+
+Connection between Frontend, Server, and Database
+The frontend sends a request to the server.
+The server processes the request and gets data from the database.
+The server sends a response back to the frontend.

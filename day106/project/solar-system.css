@@ -1,0 +1,171 @@
+/* eset default margins and padding */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+
+/* Main page styling - space theme */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0e17;
+    color: #e0e0e0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+/* Full-screen container */
+.container { 
+    height: 100vh; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+
+/* Left navigation panel */
+.planet-menu {
+    position: absolute; 
+    top: 20px; 
+    left: 20px;
+    background: rgba(10, 14, 23, 0.9);
+    border: 1px solid #1a2a3a; 
+    border-radius: 10px;
+    padding: 15px; 
+    z-index: 100; 
+    min-width: 150px;
+}
+
+
+/* Planet list styling */
+.planet-list { 
+    list-style: none; 
+}
+
+
+.planet-list li { 
+    margin: 5px 0; 
+}
+
+
+.planet-list a {
+    color: #e0e0e0; 
+    text-decoration: none; 
+    display: block;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background 0.3s;
+}
+
+
+.planet-list a:hover { 
+    background: #2a3a4a; 
+}
+
+
+/* Solar system container - centered */
+.solar-system {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+
+/* Sun styling with glow effect */
+.sun {
+    width: 80px; 
+    height: 80px;
+    background: radial-gradient(circle, #ffd200, #ff7e00);
+    border-radius: 50%; 
+    box-shadow: 0 0 50px #ff7e00;
+    position: absolute; 
+    top: -40px; 
+    left: -40px;
+}
+
+
+/* Planet base styling */
+.planet {
+    position: absolute; 
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: transform 0.3s;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+
+/* Planet hover effect */
+.planet:hover { 
+    transform: translate(-50%, -50%) scale(1.3); 
+}
+
+
+/* Planet name label */
+.planet-name {
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    font-size: 0.9rem;
+    white-space: nowrap; 
+    pointer-events: none; 
+    opacity: 0;
+    transition: opacity 0.3s; 
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.planet:hover .planet-name { 
+    opacity: 1; 
+}
+
+
+/* Bottom control panel */
+.controls {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background: rgba(10, 14, 23, 0.7); 
+    padding: 15px; 
+    border-radius: 10px;
+    display: flex; 
+    gap: 15px; 
+    align-items: center; 
+    border: 1px solid #1a2a3a;
+}
+
+
+/* Button styling */
+button {
+    background: #1a2a3a; 
+    border: none; 
+    color: #e0e0e0;
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+
+button:hover { 
+    background: #2a3a4a; 
+}
+
+
+/* Instructions panel */
+.instructions {
+    position: absolute; 
+    top: 20px; 
+    right: 20px;
+    background: rgba(10, 14, 23, 0.7); 
+    padding: 10px 15px;
+    border-radius: 5px; 
+    font-size: 0.9rem; 
+    border: 1px solid #1a2a3a;
+}

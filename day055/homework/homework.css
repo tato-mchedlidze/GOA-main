@@ -1,0 +1,221 @@
+/* <!-- keyframes and animation basics --> */
+/* Create a simple animation using @keyframes that moves a box from left to right. */
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: moveBox 4s linear infinite;
+}
+
+@keyframes moveBox {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(300px);
+    }
+}
+
+/* Define an animation using @keyframes that changes the background color from blue to red over 5 seconds. */
+#box-2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: changecolor 4s ease-in infinite;
+}
+
+@keyframes changecolor{
+    0%{
+        background-color: red;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+/* Create a CSS animation that rotates an element 360 degrees. */
+#box-3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: rotation 4s ease-in infinite;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Design a pulse effect using keyframes where an element scales up and down. */
+
+#box-4{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: pulse 4s ease-in infinite;
+}
+
+@keyframes pulse {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}
+
+
+/* animation-iteration-count */
+/* Animate a bouncing ball that repeats exactly 3 times. */
+#box-5 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out 3;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+/* Set up an infinite animation of a loading spinner. */
+#box-6 {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #c2c1c1;
+    border-top: 10px solid rgb(255, 17, 0);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Create an animation that runs only once and then stops. */
+#box-7 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+} 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Use a class toggle to switch between an animation that loops and one that doesn't. */
+#box-8 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: moveRight 2s forwards;
+}
+
+#box-8.loop {
+    animation: moveRight 2s infinite alternate;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+/* duration of play */
+/* Set an animation to start 2 seconds after the page loads. */
+#box-9 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: slide 2s ease forwards;
+    animation-delay: 2s; /* wait 2 seconds before starting */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+/* Create a sequence of three elements animating one after another using different `animation-delay` values. */
+#box-10 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+    animation: moveright 1s ease forwards;
+}
+
+#box-11 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+    animation: moveright 4s ease forwards;
+}
+
+#box-12 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+    animation: moveright 6s ease forwards;
+}
+
+@keyframes moveright {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+/* Make a fading effect that lasts for exactly 10 seconds. */
+#box-13{
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: fadeEffect 10s linear forwards;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

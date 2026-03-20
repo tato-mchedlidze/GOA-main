@@ -1,0 +1,115 @@
+/* 1. Button Hover Animation */
+.hover-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hover-btn:hover {
+    background-color: #2ecc71;
+}
+
+/* 2. Link Hover Transition */
+.hover-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.hover-link:hover {
+    color: #e74c3c;
+}
+
+/* 3. Image Scaling */
+.scale-img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.scale-img:hover {
+    transform: scale(1.1);
+}
+
+/* 4. Text Hover Effect */
+.hover-text {
+    color: #2c3e50;
+    transition: color 0.3s;
+}
+
+.hover-text:hover {
+    color: #e74c3c;
+}
+
+/* 5. Border Animation */
+.border-box {
+    padding: 20px;
+    border: 2px solid #3498db;
+    transition: border-width 0.3s;
+}
+
+.border-box:hover {
+    border-width: 6px;
+}
+
+/* 6. Button Press Effect */
+.press-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.press-btn:active {
+    transform: scale(0.95);
+}
+
+/* 7. Opacity Transition */
+.fade-div {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    transition: opacity 0.3s;
+}
+
+.fade-div:hover {
+    opacity: 0.5;
+}
+
+/* 8. Padding Animation */
+.padding-box {
+    background-color: #3498db;
+    padding: 20px;
+    transition: padding 0.3s;
+}
+
+.padding-box:hover {
+    padding: 40px;
+}
+
+/* 9. Rotation Effect */
+.icon {
+    font-size: 50px;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: rotate(15deg);
+}
+
+/* 10. Shadow Animation */
+.shadow-card {
+    width: 300px;
+    height: 200px;
+    background-color: #3498db;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.shadow-card:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}

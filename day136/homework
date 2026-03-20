@@ -1,0 +1,20 @@
+1) What is an Error Boundary?
+An Error Boundary is a React component that catches errors in other components so the whole app does not crash.
+It shows a simple error message instead of breaking the entire page.
+It is useful because it keeps the app working and makes errors easier to handle.
+
+
+
+2) Methods in an Error Boundary
+
+getDerivedStateFromError(error)
+Used to update the state when an error happens.
+It tells React to show an error message instead of the broken component.
+
+componentDidCatch(error, info)
+Used to get information about the error and log it (for example, in the console).
+Helps developers find and fix the problem.
+
+reset()
+Used to clear the error and try to render the component again.
+Usually connected to a button like “Try again”.

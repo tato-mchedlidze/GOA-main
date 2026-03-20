@@ -1,0 +1,36 @@
+print(type("tato"))
+print(type("saba"))
+print(type('deda'))
+print(type("mama"))
+print(type("bebo"))
+print(type("matematika"))
+print(type("saxli"))
+print(type("manqana"))
+print(type("sporti"))
+print(type("lorem"))
+
+print(type(10))
+print(type(20))
+print(type(30))
+print(type(40))
+print(type(50))
+print(type(60))
+print(type(70))
+print(type(80))
+print(type(90))
+print(type(100))
+
+print(type(10.0))
+print(type(20.0))
+print(type(30.0))
+print(type(40.0))
+print(type(50.0))
+print(type(60.0))
+print(type(70.0))
+print(type(80.0))
+print(type(90.0))
+print(type(100.0))
+
+# chven konvertacia gvchirdeba magalitad rodesac gvinda rom davprintot rom mg. "me var 10 wlis"
+# tu amas vcdi rom davprinto erors gamomitans radgan 10 int-ia da yvela sityva prjyalefshi aris str-ingi
+# am atsac unda gavuketot konvertacia

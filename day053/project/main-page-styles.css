@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* main style */
+body {
+    height: 100vh;
+    background-color: #D4C9BE;
+    margin:0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+footer{
+    background-color: #333;
+    text-align: center;
+    color: rgb(156, 153, 153);
+    border: solid 3px gray;
+}
+
+/* writing style */
+p{
+    font-size: 35px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Great Vibes', cursive;
+}
+
+h2{
+    margin-right: 150px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Great Vibes', cursive;
+}
+
+hr{
+    margin-top:70px ;
+    width: 100%;
+    height: 2.5px;
+    background-color:#DF9755 ;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+    color :#DF9755 ;
+}
+
+/* imgs */
+.image-one {
+    background-image: url(images/terrace.png); /* Initial image */
+}
+
+.image-two {
+    background-image: url(images/spain.png); /* Image that will change to on click */
+}
+
+.image-three {
+    background-image: url(images/germany.png); /* Image that will change to on click-2 */
+}
+
+#skiing-pic{
+    background-image: url(images/skiiresort.png);
+}
+
+#sauna{
+    background-image: url(images/sauna.png);
+}
+
+#attractions{
+    background-image: url(images/attractions.png);
+}
+
+/* flex stuff */
+#Flex-box{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start ;
+}
+
+/* style for nav bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #EB5A3C;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #E7D283;
+}
+
+/* main title */
+.letters-ani {
+    font-family: 'Great Vibes', cursive;
+    font-size: 125px;
+    color: #DF9755;
+    display: flex;
+    margin-top: 100px;
+}
+
+.letter {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* img changing-first */
+.image-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border:1px solid #333;
+    background-image: url(images/view3.png); /* Initial background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* layering */
+.image-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0; /* Start hidden */
+    transition: opacity 3s ease; /* Fade in/out */
+}
+
+/* Initial animation and timing */
+/* img change-first */
+#scale-down-hor-center:active .image-container {
+    animation: scale-down-hor-center 2s forwards,
+            scale-up-hor-center 2s 2s forwards;
+}
+
+/* Show image-two after the initial animation */
+#scale-down-hor-center:active .image-two {
+    opacity: 1; /* Make the second image visible when clicked */
+    animation: fade-in 0.5s forwards 1s; /* Fade in image-two after 1 second */
+}
+
+/* Show image-three after image-two */
+#scale-down-hor-center:active .image-three {
+    opacity: 0; /* Start hidden */
+    animation: fade-in 0.5s forwards 3s; /* Fade in image-three after 2 seconds */
+}
+
+/* Keyframe animations */
+@keyframes scale-down-hor-center {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(0.01);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes scale-up-hor-center {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(0.01);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* Fade-in effect for image layers */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Style for the back-to-top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #EB5A3C;
+    border: solid 2px black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.back-to-top:hover {
+    background-color: #DF9755;
+}

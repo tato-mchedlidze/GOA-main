@@ -1,0 +1,101 @@
+/* hw 2, 4 */
+/* input type style */
+input[type="password"],
+input[type="email"], 
+textarea {
+    border: 2px solid #ccc;         
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* focus input */
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+    outline: none;
+}
+
+/* hw 3 */
+/* submit buttton */
+input[type="submit"]{
+    border: 2px solid #ccc;
+    color: #3aab58;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* submit button hover */
+input[type="submit"]:hover{
+    color: #2b773f;
+    border-color: #4caf50;
+    border-radius: 10px;
+    background-color: #e8f5e9 ;
+    padding: 10px;
+}
+
+/* hw 5 */
+/* Error message style */
+.error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Error message icon */
+.error-icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* Error message text */
+.error-text {
+    font-weight: bold;
+}
+
+/* To display error messages when needed */
+input:invalid + .error-message,
+input:focus:invalid + .error-message {
+    display: flex;
+}
+
+/* hw 6, 7, 8, 9, 12 */
+/* div style */
+div{
+    padding: 10px 15px 20px 25px;
+    border: #ebebeb solid 2px;
+    border-radius: 5px;
+    box-shadow: #2b773f;
+}
+
+/* hw 10 */
+/* p style */
+p{
+    margin: 30px;
+}
+
+/* hw 11 */
+/* button style */
+button{
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+}
+
+/* hw 12 */
+/* list style */
+li{
+    margin: 15px;
+}
+ol{
+    margin: -15px;
+}

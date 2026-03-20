@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: 400;
+    font-weight: 500;
+    font-style: 700;
+}
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+
+.Top{
+    display: flex;
+    gap: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoveProducts{
+    width: 200px;
+    color: hsl(300, 43%, 22%);
+}
+
+.ExtraInfo{
+    width: 300px;
+}
+
+.Review{
+    display: flex;
+    height: 30px;
+    width: 300px;
+    background-color: hsl(300, 24%, 96%);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: hsl(300, 43%, 22%);
+}
+
+.TopRight{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+img{
+    width: 15px;
+    height: 15px;
+}
+
+.Review:nth-child(2){
+    margin-left: 20px;
+}
+.Review:nth-child(3){
+    margin-left: 40px;
+}
+
+
+.Colton, .Irene, .Anne{
+    background-color: hsl(300, 43%, 22%);
+    height: 200px;
+    width: 320px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardTop{
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+    color: white;
+    margin-left: 30px;
+}
+
+.CardTop img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.CardTop b{
+    color: hsl(333, 80%, 67%);
+}
+
+.Colton p, .Irene p, .Anne p{
+    color: white;
+    width: 250px;
+}
+
+.Bottom{
+    display: flex;
+    gap: 30px;
+}
+
+
+.Irene{
+    margin-top: 20px;
+}
+
+.Anne{
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .Top {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .TopRight {
+        align-items: center;
+    }
+
+    .Review {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .Review:nth-child(2),
+    .Review:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .Bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Colton,
+    .Irene,
+    .Anne {
+        width: 90%;
+        height: auto;
+    }
+
+    .CardTop {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .Colton p,
+    .Irene p,
+    .Anne p {
+        width: 90%;
+        text-align: center;
+    }
+}

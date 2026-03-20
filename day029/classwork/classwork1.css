@@ -1,0 +1,48 @@
+#white{
+    color: rgb(255, 255, 255);
+}
+
+#black{
+    color: rgb(0, 0, 0);
+}
+
+#red{
+    color: rgb(255, 0, 0);
+}
+
+#green{
+    color: rgb(0, 126, 0);
+}
+
+#blue{
+    color: rgb(0, 0, 255);
+}
+
+#yellow{
+    color: rgb(255, 255, 0);
+}
+
+#cyan{
+    color: rgb(0, 255, 255);
+}
+
+#purple{
+    color: rgb(124, 0, 124);
+}
+
+#p1{
+    color: rgb(6, 8, 10);
+}
+    
+#p2{
+    color: rgb(79, 98, 116);
+}
+#p3{
+    color: rgb(17, 255, 108);
+}
+#p4{
+    color: rgb(102, 104, 20);
+}
+#p5{
+    color: rgb(73, 24, 24);
+}

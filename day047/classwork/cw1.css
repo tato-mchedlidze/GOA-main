@@ -1,0 +1,46 @@
+#parent{
+    width: 700px;
+    height: 700px;
+    border: 3px dotted black;
+    position: relative;
+}
+
+.child{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#red{
+    background-color: red;
+    left: 0px;
+    top: 0px;
+}
+
+#green{
+    background-color: green;
+    right: 0px;
+    top: 0px;
+}
+
+#footer{
+    background-color: grey;
+    left: 325px;
+    top: 325px;
+}
+
+#purple{
+    background-color: purple;
+    right: 0px;
+    bottom: 0px;
+}
+
+#blue{
+    background-color: blue;
+    left: 0px;
+    bottom: 0px;
+}

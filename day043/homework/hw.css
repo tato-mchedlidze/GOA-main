@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+.header, .footer {
+    background: #ff4500;
+    color: white;
+    padding: 20px;
+}
+
+.footer {
+    background: #ff1493; 
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+.left {
+    background: #1e90ff;
+}
+
+.right {
+    background: #228b22;
+}
+
+.content {
+    flex: 2;
+    background: #4b0082; 
+    padding: 20px;
+    color: white;
+}

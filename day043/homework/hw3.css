@@ -1,0 +1,33 @@
+body {
+    background-color: #6b7280;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    gap: 16px;
+}
+.box {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: white;
+}
+.bg-blue {
+    background-color: #3b82f6;
+}
+.bg-green {
+    background-color: #10b981;
+}
+.bg-red {
+    background-color: #ef4444;
+}
+.bg-yellow {
+    background-color: #f59e0b;
+}

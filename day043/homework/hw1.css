@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.header, .hero, .content, .sidebar, .footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background: #1E90FF; /* Blue */
+}
+
+.hero {
+    background: #DC143C; /* Red */
+}
+
+.content {
+    background: #008000; /* Green */
+}
+
+.sidebar {
+    background: #6A0DAD; /* Purple */
+}
+
+.footer {
+    background: #4F4F4F; /* Dark Gray */
+}

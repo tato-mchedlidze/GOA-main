@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: 500;
+    font-weight: 700;
+    font-style: 800;
+}
+.Main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.Result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    width: 300px;
+    height: 400px;
+    border-radius: 5%;
+}
+.DetailedSummary{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(241, 100%, 89%);
+}
+
+.DetailedSummary b{
+    font-size: x-large;
+    color: white;
+}
+
+.Score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    color: hsl(241, 100%, 89%);
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.Score b{
+    font-size: xx-large;
+    color: white;
+}
+
+.Result h3{
+    color: hsl(241, 100%, 89%);
+}
+
+
+.Summary{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Reaction,.Memory,.Verbal,.Visual{
+    display: flex;
+    gap: 50px;
+    border-radius: 10px;
+    height: 40px;
+    width: 190px;
+}
+
+.Reaction{
+    background-color: hsla(0, 100%, 67%, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+.Memory{
+    background-color: hsla(39, 100%, 56%,0.3);
+    justify-content: center;
+    align-items: center;
+}
+.Verbal{
+    background-color: hsla(166, 100%, 37%,0.3);
+    justify-content: center;
+    align-items: center;
+}
+.Visual{
+    background-color: hsla(234, 85%, 45%,0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.SummaryDetailed{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button{
+    width: 190px;
+    height: 35px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 15px;
+    color: white;
+}
+
+.ImgText{
+    display: flex;
+    gap: 2px;
+}
+
+.ImgText{
+    width: 60px;
+}
+
+button:hover{
+    cursor: grab;
+    background: linear-gradient(to top, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+
+@media (max-width: 600px) {
+    .Main {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .Result,
+    .Summary {
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .Reaction,
+    .Memory,
+    .Verbal,
+    .Visual {
+        width: 100%;
+        gap: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

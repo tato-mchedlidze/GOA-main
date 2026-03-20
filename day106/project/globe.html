@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planet Explorer</title>
+    <link rel="stylesheet" href="globe.css">
+</head>
+<body>
+    <div id="controls">
+        <!-- Planet selection dropdown -->
+        <label for="planetSelect">Choose Planet:</label>
+        <select id="planetSelect">
+            <option value="earth">Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+            <option value="venus">Venus</option>
+            <option value="mercury">Mercury</option>
+        </select>
+        <br>
+        <!-- Rotation speed control slider -->
+        <label for="speedRange">Rotation Speed:</label>
+        <input type="range" id="speedRange" min="0" max="0.02" step="0.001" value="0.002">
+    </div>
+
+    <!-- === 3D GLOBE CONTAINER === -->
+    <!-- This is where the Globe.gl library renders the 3D planet -->
+    <div id="globeViz"></div>
+
+    <!-- === INFORMATION SIDEBAR === -->
+    <div id="sidebar">
+        <h2 id="planetName">Earth</h2> <!-- Dynamic planet name -->
+        <p id="planetFact"></p> <!-- Main fact about planet -->
+        <p>
+            <b>Temperature:</b> 
+            <span id="planetTemp"></span>
+        </p> <!-- Temperature data -->
+        <p>
+            <b>Weather:</b>
+            <span id="planetWeather"></span>
+        </p> <!-- Weather information -->
+
+        <!-- Container for additional planet facts (populated by JavaScript) -->
+        <div id="planetMore"></div>
+
+        <!-- Navigation back to solar system view -->
+        <a id="returnBtn" href="solar-system.html">⟵ Return to Solar System</a>
+    </div>
+
+    <!-- Sidebar toggle button -->
+    <button id="toggleSidebar">Hide Info</button>
+
+    <!-- === EXTERNAL LIBRARIES === -->
+    <!-- Globe.gl library for 3D planet rendering -->
+    <script src="https://unpkg.com/globe.gl"></script>
+
+    <script src="globe.js"></script>
+</body>
+</html>

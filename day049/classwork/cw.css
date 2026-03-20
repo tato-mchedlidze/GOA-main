@@ -1,0 +1,18 @@
+body{
+    background-color: grey;
+}
+
+div{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: 10px solid white;
+    transition: size 1s, background-color 2s, border 2s;
+}
+
+div:active{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 10px solid black;
+}

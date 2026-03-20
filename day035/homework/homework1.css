@@ -1,0 +1,9 @@
+table, th, td {
+    border: 5px solid rgb(36, 11, 102);
+    border-collapse: collapse;
+
+}
+
+th, td {
+    background-color: #f5009f;
+}

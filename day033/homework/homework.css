@@ -1,0 +1,32 @@
+p {
+    text-decoration: line-through;
+    text-shadow: 2px 2px 1px;
+}
+
+h1 {
+    text-decoration:overline ;
+    text-shadow: 2px 2px 5px red;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+h2 {
+    text-decoration: underline, overline;
+    text-shadow: 2px 2px 5px blue;
+}
+
+a {
+    text-decoration: underline dashed;
+    text-decoration: underline none;    
+}
+
+.warning{
+    text-decoration: wavy;
+}
+
+nav {
+    text-transform: uppercase;
+}
+

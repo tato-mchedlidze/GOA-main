@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header, .footer {
+    background-color: #a3d000;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.article {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+}
+
+.aside {
+    flex: 1;
+    background-color: #f9f9d5;
+    padding: 20px;
+}
+
+.nav {
+    flex: 1;
+    background-color: #d4e6c3;
+    padding: 20px;
+}

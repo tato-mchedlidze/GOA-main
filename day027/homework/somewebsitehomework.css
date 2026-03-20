@@ -1,0 +1,48 @@
+/* text style */
+h1, h5 {
+    text-align:center ;
+    color: white;
+}
+
+/* fake link */
+p {
+    text-align: center;
+    color: rgb(1, 141, 255);
+    font-weight: 1000;
+}
+
+/* background  style */
+body {
+    background-color: rgb(36, 36, 61);
+}
+
+/* button style */
+button{
+    background-color: rgb(1, 141, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+/* alt button style */
+.alt{
+    background-color: rgb(36, 36, 61);
+    border: 100px, rgb(1, 141, 255);
+    border-radius: 10px;
+    color: rgb(1, 141, 255);
+}
+
+/* button aligment */
+.button_vertical { 
+    height: 200px;
+    position: relative;
+}
+.button_horizontal {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

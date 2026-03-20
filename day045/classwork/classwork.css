@@ -1,0 +1,16 @@
+.container { 
+    display: flex; 
+    flex-direction: column;
+}
+.header, .footer { 
+    background: cyan;
+}
+.main { 
+    display: flex;
+}
+.menu { 
+    background: red;  
+}
+.content { 
+    background: orange; 
+}

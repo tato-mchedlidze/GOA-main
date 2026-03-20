@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Explorer</title>
+    <link rel="stylesheet" href="solar-system.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Planet navigation menu -->
+        <nav class="planet-menu">
+            <h3>Explore Planets</h3>
+            <ul class="planet-list">
+                <li><a href="globe.html?planet=Mercury">Mercury</a></li>
+                <li><a href="globe.html?planet=Venus">Venus</a></li>
+                <li><a href="globe.html?planet=Earth">Earth</a></li>
+                <li><a href="globe.html?planet=Mars">Mars</a></li>
+                <li><a href="globe.html?planet=Jupiter">Jupiter</a></li>
+                <li><a href="globe.html?planet=Saturn">Saturn</a></li>
+                <li><a href="globe.html?planet=Uranus">Uranus</a></li>
+                <li><a href="globe.html?planet=Neptune">Neptune</a></li>
+            </ul>
+        </nav>
+
+        <!-- User instructions -->
+        <div class="instructions">
+            Click planets to explore • Use mouse wheel to zoom
+        </div>
+        
+        <!-- Solar system visualization area -->
+        <div class="solar-system" id="solarSystem">
+            <div class="sun">
+            </div>
+        </div>
+
+        <!-- Control buttons -->
+        <div class="controls">
+            <button id="slowDown">Slow Down</button>
+            <span id="speedDisplay">Normal Speed</span>
+            <button id="speedUp">Speed Up</button>
+            <button id="resetView">Reset View</button>
+        </div>
+    </div>
+
+    <script src="solar-system.js"></script>
+</body>
+</html>

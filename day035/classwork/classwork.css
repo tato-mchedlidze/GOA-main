@@ -1,0 +1,12 @@
+.link1:hover{
+    font-size: 50px;
+    font-weight: 400px;
+    color: #ff4563;
+}
+
+.link1:active{
+    font-size: 20px;
+    font-weight: 200px;
+    color: #57111d;
+}
+

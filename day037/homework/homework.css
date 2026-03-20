@@ -1,0 +1,23 @@
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse
+}
+
+th{
+    color: white;
+}
+
+#table tr:nth-child(1) {
+    background-color: rgb(81, 158, 81);
+    color: white;
+}
+
+#table tr:nth-child(2) #table tr:nth-child(4) {
+    background-color: white;
+    color: black;
+}
+
+#table tr:nth-child(3) {
+    background-color: rgb(222, 216, 216);
+    color:rgb(81, 158, 81)
+}

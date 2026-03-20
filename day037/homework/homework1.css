@@ -1,0 +1,39 @@
+/* table in general */
+table, th, td {
+    border: 1px solid rgb(240, 240, 240);
+    border-collapse: collapse
+}
+
+/* v1 table */
+#tablev1 tr:nth-child(1) {
+    background-color: rgb(244, 80, 80);
+    color: white;
+    font-weight: 700px;
+}
+
+/* v2 table */
+#tablev2 tr:nth-child(1) {
+    background-color: rgb(49, 110, 61);
+    color: white;
+}
+
+
+/* v3 table */
+#tablev3 tr:nth-child(1) {
+    background-color: rgb(15, 86, 166);
+    color: white;
+}
+
+/*  table info look */
+.table tr:nth-child(2) .table tr:nth-child(4) {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.table tr:nth-child(3) {
+    background-color: rgb(224, 220, 220);
+}
+
+.table tr:nth-child(5) {
+    background-color: rgb(224, 220, 220);
+}

@@ -1,0 +1,94 @@
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(303, 10%, 53%);
+    padding: 30px;
+    height: 100vh;
+}
+
+.services-ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.services {
+    max-width: 500px;
+}
+
+.services h1 {
+    font-size: 3rem;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: hsl(303, 10%, 53%);
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 300px;
+}
+
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(303, 10%, 53%);
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    margin-left: 10px;
+    color: #FFD700;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.review {
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.role {
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(300, 24%, 96%);
+}
+
+.comment {
+    font-size: 20px;
+    margin-top: 15px;
+}

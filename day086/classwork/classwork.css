@@ -1,0 +1,52 @@
+body {
+    background: hsl(221, 100%, 96%);
+    font-family: Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 650px;
+}
+
+.left{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+}
+
+
+.circle{
+    background-color:hsla(256, 72%, 46%, 1);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.right{
+    padding: 30px;
+    flex: 1;
+}
+
+button{
+    background: hsl(224, 30%, 27%);
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    padding: 15px;
+    border: none;
+}

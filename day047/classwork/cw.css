@@ -1,0 +1,8 @@
+parent{
+    width: 500px;
+    height: 1000px;
+    border-radius: 20px;
+    border: 3px dotted black;
+    background-size: cover;
+    background-image: url("hotel.png");
+}

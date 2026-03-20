@@ -1,0 +1,350 @@
+/* body css */
+body{
+    backdrop-filter: blur(5px);
+    background-image:url(images/view.png);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+main {
+    margin-top: 80px;
+}
+
+/* style for nav bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #EB5A3C;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #E7D283;
+}
+
+/* regular accuring witing */
+
+h1{
+    text-align: center;
+    color: #EB5A3C;
+    font-size:70px;
+}
+
+h2{
+    color: #EDF4C2;
+    font-size:40px;
+}
+
+p{
+    color: #EDF4C2;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+hr{
+    margin-top:70px ;
+    width: 100%;
+    height: 20px;
+    background-color: #EB5A3C;
+    border: none;
+}
+
+footer p{
+    font-weight: 500;
+    text-align: left;
+    color:#f51111;
+}
+
+h3{
+    color: #EDF4C2;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+label{
+    color: #f51111;
+    font-size: 30px;
+}
+
+input[type="text"] {
+    border: 2px solid #EB5A3C;
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* italy img animations and style */
+#italy{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#italy_img{
+    border: 10px double #EB5A3C ;
+    margin-right: 20px;
+    transition: 2s;
+}
+
+#italy_img:hover{
+    transform: scale(1.1);
+}
+
+#header {
+    display: block; 
+    margin-top: 80px; 
+    color:#EDF4C2 ;
+    font-size:40px;
+}
+
+#views{
+    display: flex;
+    justify-content: space-between;
+}
+
+#view{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+    margin-left:50px ;
+}
+
+#view:hover{
+transform: scale(1.1);
+}
+
+
+#view1{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+}
+
+#view1:hover{
+    transform: scale(1.1);
+}
+
+
+#view2{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+    margin-right:50px ;
+}
+
+#view2:hover{
+    transform: scale(1.1);
+}
+
+#div1{
+    display: flex;
+    justify-content: center;
+}
+
+#room{
+    color: #DF9755;
+}
+
+#park{
+    font-size: 40px;
+}
+
+
+#room37{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+    margin-right: 50px;
+}
+
+#room37:hover{
+    transform: scale(1.1);
+}
+
+#bathroom37{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+}
+
+#bathroom37:hover{
+    transform: scale(1.1)
+}
+
+
+#Park View{
+    font-size: 30px ;
+    font-weight: 900;
+}
+
+
+#price{
+    font-size: 40px;
+    font-weight: 900;
+    color:#f82900;
+}
+
+
+#div2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#room1{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+    margin-left: 30px;
+}
+
+#room1:hover{
+    transform: scale(1.1);
+}
+
+
+#room11{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+}
+
+#room11:hover{
+    transform: scale(1.1);
+}
+
+#bathroom1{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+    margin-right: 30px;
+}
+
+#bathroom1:hover{
+    transform: scale(1.1);
+}
+
+#price1{
+    font-size: 40px;
+    font-weight: 900;
+    color:#f82900;
+}
+
+
+#div3{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#terrace{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+    margin-left: 30px;
+}
+
+#terrace:hover{
+    transform: scale(1.1);
+}
+
+#room2{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+}
+
+#room2:hover{
+    transform: scale(1.1);
+}
+
+#bathroom2{
+    border: 10px double #EB5A3C;
+    width: 450px;
+    height: 400px;
+    transition: 2s;
+    margin-right: 30px;
+}
+
+#bathroom2:hover{
+    transform: scale(1.1);
+}
+
+#price2{
+    font-size: 40px;
+    font-weight: 900;
+    color:#f82900;
+}
+
+#div4{
+    background-color: white;
+}
+
+
+#stars{
+    width: 250px;
+    height: 100spx;
+}
+
+/* button hover and style */
+.submit-button {
+    border: none;
+    background-color: #EB5A3C;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-button:hover {
+    background-color: #E7D283;
+}

@@ -1,0 +1,171 @@
+body{
+    background-color: hsl(0, 0%, 81%);
+}
+
+.Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.DJ{
+    display: flex;
+    gap: 30px;
+}
+
+.JP{
+    display: flex;
+    gap: 30px;
+}
+
+.LeftPart{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Daniel{
+    height: 350px;
+    width: 600px;
+    background-color: hsl(263, 55%, 52%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.upperPart{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px hsla(0, 0%, 81%,0.6) solid;
+}
+
+h2{
+    color: white;
+    margin-left: 20px;
+}
+
+.DanielMain p {
+    color: hsl(0, 0%, 81%);
+    margin-left: 20px;
+}
+
+.Jonathan{
+    height: 350px;
+    width: 250px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 5px;
+}
+
+.JonathanMain p {
+    color: hsl(0, 0%, 81%);
+    margin-left: 20px;
+}
+
+.Jeanette{
+    height: 350px;
+    width: 320px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.JeanetteIntro{
+    color: black;
+}
+
+.JeanetteMain h2{
+    color: black;
+}
+
+.JeanetteMain p{
+    margin-left: 20px;
+}
+
+.Patrick{
+    width: 530px;
+    height: 350px;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 5px;
+}
+
+.PatrickMain{
+    color: hsl(0, 0%, 81%);
+}
+
+.PatrickMain h2{
+    color: hsl(0, 0%, 81%);
+}
+
+.PatrickMain p{
+    margin-left: 20px;
+}
+
+
+.Kira{
+    height: 730px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.KiraIntro{
+    color: black;
+}
+
+.KiraMain h2{
+    color: black;
+}
+
+.KiraMain p{
+    margin-left: 20px;
+}
+
+.Kira, .Jonathan, .Patrick, .Daniel, .Jeanette{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+@media (max-width: 768px) {
+    .Main {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .DJ, .JP, .LeftPart {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Daniel, .Jonathan, .Jeanette, .Patrick, .Kira {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .Daniel, .Jonathan, .Jeanette, .Patrick, .Kira {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
+    h2, p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

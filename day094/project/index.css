@@ -1,0 +1,24 @@
+body { 
+    margin: 0; 
+    overflow: hidden; 
+}
+
+#globeViz { 
+    width: 100vw; 
+    height: 100vh; 
+}
+
+#tooltip {
+    position: absolute;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.85);
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+#tooltip img {
+    display: block;
+    margin-top: 4px;
+    border: 1px solid white;
+}

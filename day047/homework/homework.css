@@ -1,0 +1,117 @@
+/* 1. Center a Div Horizontally */
+.center-div {
+    width: 50%;
+    margin: 0 auto; /* Centers the div horizontally */
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. Move an Image to the Right */
+.right-image {
+    float: right;
+    margin-left: 20px;
+}
+
+/* 3. Stick a Header at the Top */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Ensures it's above other content */
+}
+
+/* 4. Move a Button to the Bottom of a Div */
+.button-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: coral;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 5. Place Text Over an Image */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('https://via.placeholder.com/600x300');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+}
+
+/* 6. Fix a Footer to the Bottom of the Page */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* 7. Move a Box Slightly Up */
+.box {
+    position: relative;
+    top: -10px; /* Moves the box 10px up */
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 8. Align Two Elements Side by Side */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.element {
+    width: 45%; /* Adjust width as needed */
+    background-color: lightyellow;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 9. Float an Image to the Left */
+.left-float {
+    float: left;
+    margin-right: 20px;
+}
+
+/* 10. Add Space Between Two Elements */
+.spaced-elements {
+    position: relative;
+}
+
+.element1 {
+    position: relative;
+    bottom: 20px; /* Moves element1 down */
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+}
+
+.element2 {
+    position: relative;
+    top: 20px; /* Moves element2 up */
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    text-align: center;
+    }
