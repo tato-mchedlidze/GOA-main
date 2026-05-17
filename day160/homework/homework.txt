@@ -1,0 +1,44 @@
+// hw3
+db.products.deleteOne({ id: 1 });
+
+db.products.deleteOne({ price: { $gt: 400 } });
+
+db.products.deleteOne({ in_stock: false });
+
+db.products.deleteOne({ rating: null });
+
+db.products.deleteOne({ tags: "sale" });
+
+// hw4
+db.products.deleteMany({ price: { $lt: 50 } });
+
+db.products.deleteMany({ in_stock: false });
+
+db.products.deleteMany({ rating: { $exists: false } });
+
+db.products.deleteMany({ price: { $gt: 300 }, in_stock: false });
+
+db.products.deleteMany({ tags: { $exists: true, $size: 0 } });
+
+// hw5
+db.products.replaceOne(
+  { id: 2 },
+  { id: 2, name: "Replaced Product", price: 199 },
+);
+
+db.products.replaceOne(
+  { price: { $gt: 300 } },
+  { name: "Simplified", price: 300 },
+);
+
+db.products.replaceOne(
+  { id: 10 },
+  {
+    id: 10,
+    info: { name: "Nested Product", details: { price: 450, in_stock: true } },
+  },
+);
+
+db.products.replaceOne({ id: 3 }, { id: 3, name: "Kept Name", price: 999 });
+
+db.products.replaceOne({ id: 999 }, { id: 999, name: "Ghost", price: 0 });

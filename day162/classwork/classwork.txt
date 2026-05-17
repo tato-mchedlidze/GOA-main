@@ -1,0 +1,7 @@
+cw1
+
+db.cars_collection.createIndex({ brand: 1, year: -1 })|
+
+db.student_collection.createIndex({ name: 1, tags: -1})
+
+db.film_collection.createIndex({ cast: 1, genres: -1})

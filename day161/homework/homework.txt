@@ -1,0 +1,17 @@
+// hw2
+db.cars_collection.find({ year: { $gt: 2015 } }).explain("executionStats");
+
+// hw3
+db.cars_collection.find({ brand: "Toyota" }).explain("executionStats");
+
+// hw4
+db.cars_collection.createIndex({ year: 1 });
+
+db.cars_collection.find({ year: { $gt: 2015 } }).explain("executionStats");
+
+// hw5
+db.cars_collection.createIndex({ brand: 1, year: 1 });
+
+db.cars_collection
+  .find({ brand: "Toyota", year: { $gt: 2015 } })
+  .explain("executionStats");

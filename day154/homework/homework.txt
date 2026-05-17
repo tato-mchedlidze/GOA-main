@@ -1,0 +1,14 @@
+// connect
+mongosh "mongodb+srv://davidtezelashvili_db_user:3mWx49NutFygmQPP@cluster0.piu4cn1.mongodb.net/"
+
+// hw2
+db
+show dbs
+use movies
+show collections
+
+db.movies.find()
+
+db.movies.find({ genre: "Action" })
+
+db.movies.find({ "rating.imdb": 8.5 })

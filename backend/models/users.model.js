@@ -1,0 +1,81 @@
+// day166 cw1
+// day166 hw1
+// day167 hw2
+// day168 cw1
+// day168 cw2
+// day168 hw1
+
+import mongoose from "mongoose";
+import validator from "validator";
+import crypto from "crypto";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+
+const usersSchema = new mongoose.Schema(
+  {
+    fullname: {
+      type: String,
+      required: [true, "Fullname is required"],
+      lowercase: true,
+    },
+    email: {
+      type: String,
+      required: [true, "Email is required"],
+      unique: true,
+      lowercase: true,
+      validate: [validator.isEmail, "Please provide email with valid form"],
+    },
+    password: {
+      type: String,
+      required: [true, "Password is required"],
+      minlength: 6,
+      maxLength: 12,
+      trim: true,
+      select: false,
+    },
+    role: {
+      type: String,
+      default: "user",
+      enum: ["user", "admin"],
+    },
+    isActive: {
+      type: Boolean,
+      default: true,
+    },
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
+    verificationCode: String,
+  },
+  {
+    timestamps: true,
+  },
+);
+
+usersSchema.pre("save", async function () {
+  if (!this.isModified("password")) return;
+  this.password = await bcrypt.hash(this.password, 10);
+});
+
+usersSchema.methods.createEmailVerificationToken = function () {
+  const code = crypto.randomBytes(12).toString("hex");
+  this.verificationCode = code;
+  return code;
+};
+
+// day168 hw1 - signToken
+usersSchema.methods.signToken = function () {
+  return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN,
+  });
+};
+
+// day168 hw1 - comparePassword
+usersSchema.methods.comparePassword = async function (candidatePassword) {
+  return await bcrypt.compare(candidatePassword, this.password);
+};
+
+const Users = mongoose.model("Users", usersSchema);
+
+export default Users;

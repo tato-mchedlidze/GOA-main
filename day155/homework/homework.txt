@@ -1,0 +1,15 @@
+// hw2
+
+db.movies.find()
+
+db.movies.find({ genre: "Action" })
+
+db.movies.find({ "rating.imdb": 8.5 })
+
+db.movies.find({ year: { $gt: 2000 } })
+
+db.movies.find({ year: { $gte: 2000 } })
+
+db.movies.find({ year: { $lt: 2010 } })
+
+db.movies.find({ year: { $lte: 2010 } })

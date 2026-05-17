@@ -1,0 +1,75 @@
+// hw2
+db.products.updateOne({ id: 1 }, { $set: { price: 999 } });
+
+db.products.updateOne({ price: { $gt: 300 } }, { $set: { in_stock: false } });
+
+db.products.updateOne({ rating: { $gt: 4 } }, { $set: { status: "active" } });
+
+db.products.updateOne({}, { $rename: { name: "product_name" } });
+
+db.products.updateOne({ in_stock: true }, { $inc: { price: 20 } });
+
+// hw3
+db.products.updateMany({ price: { $gt: 400 } }, { $set: { in_stock: false } });
+
+db.products.updateMany({ price: { $lt: 100 } }, { $set: { discount: 10 } });
+
+db.products.updateMany({}, { $mul: { price: 1.05 } });
+
+db.products.updateMany(
+  { category: { $exists: false } },
+  { $set: { category: "general" } },
+);
+
+db.products.updateMany({ rating: null }, { $unset: { rating: "" } });
+
+// hw4
+db.products.findOneAndUpdate(
+  { in_stock: true },
+  { $set: { in_stock: false } },
+  { returnDocument: "after" },
+);
+
+db.products.findOneAndUpdate(
+  {},
+  { $inc: { price: 50 } },
+  { sort: { price: -1 } },
+);
+
+db.products.findOneAndUpdate(
+  { rating: { $lt: 2 } },
+  { $set: { status: "low_quality" } },
+);
+
+db.products.findOneAndUpdate({}, { $pop: { tags: 1 } });
+
+db.products.findOneAndUpdate(
+  { in_stock: true },
+  { $set: { reviewed: true } },
+  { returnDocument: "before" },
+);
+
+// hw5
+db.products.updateOne(
+  { id: 200 },
+  { $set: { name: "NewProduct", price: 150 } },
+  { upsert: true },
+);
+
+db.products.updateOne(
+  { name: "SpecialItem" },
+  { $set: { price: 500, in_stock: true } },
+  { upsert: true },
+);
+
+db.products.updateOne(
+  { id: 300 },
+  { $set: { tags: ["new"] } },
+  { upsert: true },
+);
+
+db.products.updateOne(
+  { product_name: "NonExisting" },
+  { $set: { price: 0, in_stock: false } },
+  { upsert: true },
+);

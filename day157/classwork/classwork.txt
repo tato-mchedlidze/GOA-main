@@ -1,0 +1,16 @@
+cw1
+
+1. db.film_collection.find({genres: ["Sci-fi", "Adventure", "Drama"]})
+
+2. db.film_collection.find({genres: "Drama"})
+
+3. db.film_collection.find({genres: { $all: ["Drama", "Adventure"]}})
+
+
+_________________________________________________
+
+cw2
+
+1. db.film_collection.find({genres: {$elemMatch: {$eq: "Adventure"}}})
+
+2.db.film_collection.countDocuments({genres: { $all: {["Sci-fi" "Adventure"]}}})

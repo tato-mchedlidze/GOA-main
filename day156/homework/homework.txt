@@ -1,0 +1,55 @@
+// hw2 - task 1
+db.number_collection.find();
+
+// hw2 - task 2
+db.number_collection.find({ number_value_1: { $gt: 500 } });
+
+// hw2 - task 3
+db.number_collection.find({
+  number_value_1: { $gt: 300 },
+  number_value_3: { $lt: 0 },
+});
+
+// hw2 - task 4
+db.number_collection.find({}, { text_value: 1, number_value_1: 1, _id: 0 });
+
+// hw2 - task 5
+db.number_collection.find(
+  { number_value_2: { $gt: 700 } },
+  { text_value: 1, number_value_2: 1, _id: 0 },
+);
+
+// hw2 - task 6
+db.number_collection.find().sort({ number_value_1: 1 });
+
+// hw2 - task 7
+db.number_collection.find().sort({ number_value_2: -1 });
+
+// hw2 - task 8
+db.number_collection
+  .find({ number_value_1: { $gt: 200 } })
+  .sort({ number_value_3: 1 });
+
+// hw2 - task 9
+db.number_collection.find().limit(5);
+
+// hw2 - task 10
+db.number_collection.find().sort({ number_value_2: -1 }).limit(10);
+
+// hw2 - task 11
+db.number_collection.countDocuments();
+
+// hw2 - task 12
+db.number_collection.countDocuments({ number_value_1: { $gt: 400 } });
+
+// hw2 - task 13
+db.number_collection.find({ number_value_3: { $exists: true } });
+
+// hw2 - task 14
+db.number_collection.find({ number_value_3: { $exists: false } });
+
+// hw2 - task 15
+db.number_collection
+  .find({ number_value_1: { $gt: 100 }, number_value_2: { $exists: true } })
+  .sort({ number_value_1: -1 })
+  .limit(3);

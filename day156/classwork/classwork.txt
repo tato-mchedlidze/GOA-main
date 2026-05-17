@@ -1,0 +1,26 @@
+cw1
+
+1. db["number_collection"].find({})
+
+2. db.number_collection.find({number_value_1:{$lt:500}})
+
+3. db.number_collection.find({number_value_3:{$gte:300}})
+
+4. db.number_collection.find().sort({number_value_2 :1})
+
+5. db.number_collection.find({number_value_3:{$gt:0}}).sort({number_value_2:1, number_value_1: -1})
+
+______________________________________________________________
+
+cw2
+
+1. db["number_collection"].find({}, {number_value_1: 1})
+
+2. db.number_collection.find(
+  {number_value_1:{$lt:500}},
+  {text_value 1, _id:0}
+)
+
+3. db.number_collection.find({ record: { $exists: true } })
+
+4. db.number_collection.countDocuments({ number_value_1: { $lt: 500 } })

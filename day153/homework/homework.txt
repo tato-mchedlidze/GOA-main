@@ -1,0 +1,15 @@
+hw2
+Document-oriented — stores data as JSON-like documents. Each document can have a different structure. Great for flexibility.
+e.g. MongoDB
+
+Key-Value — simplest type, stores key → value pairs. Extremely fast, perfect for caching.
+e.g. Redis
+
+Graph-based — stores data as nodes and relationships between them. Best when connections matter most.
+e.g. Neo4j
+
+Column-oriented — stores data by columns instead of rows. Great for analytics on large datasets.
+e.g. Cassandra
+
+hw3 
+already made in day 152

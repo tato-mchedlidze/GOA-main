@@ -1,0 +1,26 @@
+// hw2
+db.movies.find({ genres: ["Sci-Fi", "Action"] });
+
+db.movies.find({ cast: ["Keanu Reeves", "Laurence Fishburne"] });
+
+db.movies.find({ genres: "Sci-Fi" });
+
+db.movies.find({ cast: "Anne Hathaway" });
+
+db.movies.find({ genres: { $all: ["Sci-Fi", "Adventure"] } });
+
+db.movies.find({ genres: { $all: ["Action", "Drama"] } });
+
+db.movies.find({ "rating.imdb": { $gt: 8 }, featured: true });
+
+db.movies.find({ year: { $gt: 2010 }, "rating.imdb": { $gt: 8.5 } });
+
+db.movies.find({ genres: { $all: ["Sci-Fi", "Adventure"] } });
+
+db.movies.find({ cast: "Matthew McConaughey" });
+
+db.movies.find().sort({ "rating.imdb": -1 }).limit(5);
+
+db.movies.find({ year: { $lt: 2010 }, "rating.imdb": { $gt: 8 } });
+
+db.movies.find({ director: "Christopher Nolan" }).sort({ "rating.imdb": -1 });

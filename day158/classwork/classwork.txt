@@ -1,0 +1,39 @@
+cw1
+
+1.  db.number_colection.insertOne({
+        text_value : "sample_string_3" ,
+        number_value_1 : 420
+    })
+
+2.  db.number_colection.insertMany([
+        {text_value : "sample_string_3" ,number_value_1 : 420},
+        {text_value : "sample_string_4" ,number_value_1 : 69}
+    ])
+
+______________________________________________
+
+cw2
+
+1.  db.number_colection.updateOne(
+        {number_value_1 : 420}, 
+        { $set : {text_value : "sample_string_4" ,number_value_1 : 69}}
+    )
+
+______________________________________________
+
+cw3
+
+1.  db.film_collection.updateOne(
+        {title: "terry davis documentary"},
+        {$set: {"genres.0": "Sci-fi"}}
+    )
+
+2. db.people_collection.updateOne({ name: "Adeel Solangi"},
+        {
+            $set: {
+                "bio.hobby1": "swimming",
+                "bio.hobby2": "tennis"
+            }                              
+        }
+    )
+    

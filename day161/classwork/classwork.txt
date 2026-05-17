@@ -1,0 +1,16 @@
+cw1 
+
+db.cars_collection.createIndex({ year: 1 })
+
+db.cars_collection.getIndexes()
+
+db.cars_collection.find({ year: 2020 }).explain("executionStats")
+
+_________________________________________
+
+cw2
+
+db.cars_collection.createIndex({ year: 1, doors: 1 })
+
+db.cars_collection.find({ year: 2020, doors: 1}).explain("executionStats")
+
