@@ -1,10 +1,12 @@
 // day162 cw2
 // day162 hw2
+// day171 hw1 
 
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import morgan from "morgan";
+import cors from "cors"; // day171 hw1
 import cookieParser from "cookie-parser"; // added - day169 hw1
 import phonesRouter from "./Router/phones.route.js";
 import authRouter from "./Router/auth.route.js";
@@ -18,7 +20,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(cookieParser()); // added - day169 hw1
 app.use(cors({
-  origin : process.env.FRONTEND_URL,
+  origin: process.env.FRONTEND_URL,
   credentials: true
 }))
 

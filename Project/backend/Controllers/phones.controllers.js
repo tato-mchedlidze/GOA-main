@@ -2,6 +2,7 @@
 // day164 hw2
 // day164 cw1
 // day165 3
+// day171 hw1
 
 import AppError from "../Utils/AppError.js";
 import catchAsync from "../Utils/catchAsync.js";
@@ -32,9 +33,19 @@ export const getSinglePhone = catchAsync(async (req, res, next) => {
   return res.status(200).json(foundPhone);
 });
 
-// day163 hw2 - add phone
+// day171 hw1 - add phone
 export const addPhone = catchAsync(async (req, res, next) => {
   const body = req.body;
+
+  // specs is a nested object, sent as a JSON string in form-data
+  if (typeof body.specs === "string") {
+    body.specs = JSON.parse(body.specs);
+  }
+
+  if (!req.files || req.files.length === 0) {
+    return next(new AppError("Please upload at least one image", 400));
+  }
+
   const images = req.files.map((file) => file.path);
 
   const result = await imageUpload("phones", images);
@@ -47,7 +58,7 @@ export const addPhone = catchAsync(async (req, res, next) => {
 
   const newPhone = await Phones.create(body);
 
-  return res.status(200).json(newPhone);
+  return res.status(201).json(newPhone);
 });
 
 // day164 hw2 - edit phone
@@ -65,19 +76,18 @@ export const editPhone = catchAsync(async (req, res, next) => {
   res.status(200).json(updatedPhone);
 });
 
-// day164 cw - delete phone
-// day164 hw2 - delete phone
+// day171 hw1 - delete phone
 export const deletePhone = catchAsync(async (req, res, next) => {
   const { id } = req.params;
 
   const deletedPhone = await Phones.findByIdAndDelete(id);
 
-  if (deletedPhone === null) {
+  if (!deletedPhone) {
     return next(new AppError("Phone not found to delete!", 404));
   }
 
   const promises = deletedPhone.images.map((img) => deleteImage(img.public_id));
   await Promise.all(promises);
 
-  return res.status(204).json();
+  return res.status(204).send();
 });

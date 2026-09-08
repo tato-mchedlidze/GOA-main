@@ -1,4 +1,7 @@
+// day171 hw1
+
 import cloudinary from "../config/cloudinary.js";
+import fs from "fs";
 
 const options = {
   use_filename: true,
@@ -11,22 +14,15 @@ const options = {
 };
 
 export const imageUpload = async (folder, files) => {
-  try {
-    const uploadedPromises = files.map((file) =>
-      cloudinary.uploader.upload(file, { ...options, folder }),
-    );
-    const results = await Promise.all(uploadedPromises);
-    return results;
-  } catch (err) {
-    return { message: "Error uploading image", error: err.message };
-  }
+  const uploadedPromises = files.map(async (file) => {
+    const result = await cloudinary.uploader.upload(file, { ...options, folder });
+    fs.unlink(file, () => {}); // remove local temp file after upload
+    return result;
+  });
+
+  return await Promise.all(uploadedPromises);
 };
 
 export const deleteImage = async (publicId) => {
-  try {
-    const result = await cloudinary.uploader.destroy(publicId);
-    return result;
-  } catch (err) {
-    return { message: "Error deleting image", error: err.message };
-  }
+  return await cloudinary.uploader.destroy(publicId);
 };
