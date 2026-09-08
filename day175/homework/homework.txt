@@ -1,0 +1,17 @@
+1. Django is a tool built with Python that helps you build websites. Instead of building everything from scratch, Django gives you a lot of things already made so you can build faster.
+
+2. When you use Django as fullstack, Django does everything — it builds the pages the user sees and also handles the data behind the scenes. When you use it as just a backend, Django only handles the data and logic, and something like React handles what the user sees.
+
+3. The good thing about Django compared to MERN is that it comes with a lot of things already built in like login systems, admin panel and database tools, so you write less code. The downside is that its built in frontend system (templates) is not as powerful or modern as React.
+
+4. Django uses MVT architecture which stands for Model, View, Template.
+
+5. Model is where you describe what your database looks like. View is where you write the logic of what happens when someone visits a page. Template is the HTML file that the user actually sees on screen.
+
+6. ORM means you can talk to your database using Python instead of SQL. It is good because most people find Python easier to write than SQL, and Django handles the database stuff for you automatically.
+
+7. Use Django when your project is big and needs a lot of features like user accounts and a database. Use something simpler when your project is small and you do not need all of that.
+
+8. An application in Django is basically a piece of your project. For example one app handles users, another handles products. You split them so your code stays clean and organized.
+
+9. Pipenv creates a separate box for each of your projects where all the packages get installed. This is good because if two projects need different versions of Django, they will not interfere with each other.
