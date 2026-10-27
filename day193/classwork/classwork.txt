@@ -1,0 +1,11 @@
+5)
+SELECT city, population FROM north_american_cities WHERE country = 'Canada';
+SELECT * FROM north_american_cities WHERE country = 'United States' ORDER BY latitude DESC;
+SELECT * FROM north_american_cities WHERE longitude < -87.629798 ORDER BY longitude ASC;
+SELECT * FROM north_american_cities WHERE country = 'Mexico' ORDER BY population DESC LIMIT 2;
+SELECT * FROM north_american_cities WHERE country = 'United States' ORDER BY population DESC LIMIT 2 OFFSET 2;
+
+6)
+SELECT title, domestic_sales, international_sales FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id;
+SELECT title, domestic_sales, international_sales FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id WHERE international_sales > domestic_sales;
+SELECT title, rating FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id ORDER BY rating DESC;

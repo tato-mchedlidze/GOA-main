@@ -1,0 +1,11 @@
+<h1>{{ phone.name }}</h1>
+<p>Brand: {{ phone.brand }}</p>
+<p>Price: {{ phone.price }}</p>
+<p>Storage: {{ phone.storage }} GB</p>
+<p>Color: {{ phone.color }}</p>
+
+<form method="post" action="{% url 'phone_delete' phone.id %}">
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+</form>
+<a href="{% url 'phone_list' %}">Back</a>

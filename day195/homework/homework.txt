@@ -1,0 +1,8 @@
+13)
+INSERT INTO movies (title, director, year, length_minutes) VALUES ('Toy Story 4', 'John Lasseter', 2019, 100);
+INSERT INTO boxoffice (movie_id, rating, domestic_sales, international_sales) VALUES (15, 8.7, 340000000, 270000000);
+
+14)
+UPDATE movies SET director = 'John Lasseter' WHERE title = "A Bug's Life";
+UPDATE movies SET year = 1999 WHERE title = 'Toy Story 2';
+UPDATE movies SET title = 'Toy Story 3', director = 'Lee Unkrich' WHERE title = 'Toy Story 8';

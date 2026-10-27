@@ -1,0 +1,6 @@
+<h1>Phones</h1>
+<ul>
+    {% for p in phones %}
+    <li><a href="{% url 'phone_detail' p.id %}">{{ p.name }}</a></li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,18 @@
+15)
+DELETE FROM movies WHERE year < 2005;
+DELETE FROM movies WHERE director = 'Andrew Stanton';
+
+16)
+CREATE TABLE Database (
+    Name TEXT,
+    Version FLOAT,
+    Download_count INTEGER
+);
+
+17)
+ALTER TABLE movies ADD COLUMN Aspect_ratio FLOAT;
+ALTER TABLE movies ADD COLUMN Language TEXT DEFAULT 'English';
+
+18)
+DROP TABLE movies;
+DROP TABLE boxoffice;

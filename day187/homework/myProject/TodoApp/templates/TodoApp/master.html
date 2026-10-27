@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}My Site{% endblock %}</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{% url 'todo_list' %}">Todos</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+    <hr>
+    <footer>My Footer</footer>
+</body>
+
+</html>

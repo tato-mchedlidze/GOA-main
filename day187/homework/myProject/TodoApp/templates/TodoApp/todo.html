@@ -1,0 +1,21 @@
+{% extends 'TodoApp/master.html' %}
+
+{% block title %}Todos{% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <input name="title" required>
+    <button>Add</button>
+</form>
+<ul>
+    {% for t in todos %}
+    <li>{{ t.title }}
+        <form method="post" action="{% url 'todo_delete' t.id %}" style="display:inline">
+            {% csrf_token %}
+            <button>Delete</button>
+        </form>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
